@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nivet's DocuScan AI — Intelligent OCR &amp; Document Extractor</title>
+    <meta
+      name="description"
+      content="Privacy-first intelligent OCR & document text extractor powered by Gemini 3.8 Flash. Extract clean prose, Markdown tables, handwriting, and structured receipt JSON."
+    />
+    <meta property="og:title" content="Nivet's DocuScan AI — Intelligent OCR & Document Extractor" />
+    <meta
+      property="og:description"
+      content="Privacy-first intelligent OCR & document text extractor. Convert images, handwritten notes, and PDFs into clean prose, Markdown tables, or structured JSON."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('nivets_docuscan_theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F8FAFC] text-[#131B2E] dark:bg-[#0B0F19] dark:text-[#F1F5F9] antialiased selection:bg-[#4F46E5]/20 selection:text-[#3525CD] dark:selection:text-[#C3C0FF]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

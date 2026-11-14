@@ -1,0 +1,6 @@
+{
+  "name": "Nivet's DocuScan AI",
+  "description": "Intelligent OCR & Document Text Extractor powered by Gemini multimodal vision.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
